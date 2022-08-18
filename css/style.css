@@ -1,0 +1,456 @@
+html {
+	box-sizing: border-box;
+}
+
+* ,*:after, *:before {
+	box-sizing: inherit;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #ebebeb;
+	width: 100%;
+	height: 100%;
+}
+
+.page-container {
+	background-color: #ebebeb;
+	width: 100%;
+	height: 100%;
+}
+
+.header_menu {
+	background-color: #fff159;
+	padding: 0.5rem 0rem 4rem 0rem;	
+	margin-bottom: 6rem;
+}
+
+.header {
+	background-color: #fff159;
+} 
+.header > .navbar {
+	background-color: initial!important;
+	height: auto;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.header_menu > .header > .navbar .menu_navbar {
+	position: absolute;
+}
+
+.header > .navbar >.container-fluid {
+	justify-content: initial;
+}
+
+.header .navbar-brand, .header_login .navbar-brand {
+	background-image: url(../img/logo_mercado_libre.png);
+	background-repeat: no-repeat;
+	background-size: 134px 34px;
+	height: 34px;
+    top: 11px;
+    width: 134px;
+	display: block;
+}
+
+.header .form {
+	width: 40rem;
+	margin-left: 4rem;
+}
+.header .form input {
+	height: 39px;
+	padding: 7px 60px 9px 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    margin: 0!important;
+    border: 0;
+    border-radius: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.header .form button {
+	width: 64px;
+	background: #fff;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 1.5rem 0.7rem;
+    border: 0;
+    border-radius: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.header .form button::before {
+	content: "";
+	position: absolute;
+	display: block;
+    height: 26px;
+    border-left: 1px solid #e6e6e6;
+    top: 14.5px;
+}
+
+.header .menu_navbar_visible {
+	width: 18%;
+    background-color: #000;
+    box-shadow: 2px 0 4px #808080;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.menu_navbar_visible_button {
+	display: flex;
+    justify-content: end;
+}
+
+.header .menu_navbar_visible button {
+	width: 14%;
+	border: none;
+    background-color: transparent;
+}
+
+
+.header .menu_navbar_visible img {
+	width: 100%;
+}
+
+.header .menu_navbar_visible ul {
+	list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.header .menu_navbar_visible li {
+    width: 100%;
+}
+.header .menu_navbar_visible li:hover a {
+	background-color: blue;
+	color: #fff;
+	transition: all 0.4s ease;
+}
+
+.header .menu_navbar_visible a {
+	text-decoration: none;
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.2s ease;
+    display: block;
+	padding-bottom: 0.5rem;
+
+}
+
+
+
+/*section*/
+
+.container_section_products {
+	position: relative;
+}
+
+.container_section_products .content {
+	position: relative;
+	white-space: normal;
+}
+
+.container_section_products  .row {
+	justify-content: space-between;
+	padding-bottom: 4rem;
+} 
+
+.container_section_products .img_content {
+	height: 224px;
+    width: 224px;
+}
+
+.container_section_products a {
+    text-decoration: none;
+}
+
+.container_section_products .img_content img {
+	height: 224px;
+    width: 224px;
+}
+.content_products {
+	width: 18.666667%!important; 
+	background-color: #fff;
+	border-radius: 0.4rem;
+	box-shadow: 0rem 0.1rem 0rem 0rem rgb(0 0 0 / 12%);
+	margin-bottom: 5rem;
+	white-space: normal;
+	transition: height .1s ease-out;
+	height: 350px;
+	transition: all 0.4s ease;
+} 
+
+.content_products:hover {
+	box-shadow: 0rem 1.5rem 1.3rem 0.5rem rgb(0 0 0 / 7%);
+	height: auto;
+    max-height: 360px;
+    min-height: 350px;
+    margin-bottom: 0rem;
+}
+
+.container_section_products .content strong::before {
+	content: "";
+	position: absolute;
+	width: 15.45rem;
+	height: 1px;
+	background-color: grey;
+	transform: translate(-0.78rem, 0rem);
+	opacity: 0.2;
+
+}
+
+.container_section_products .content h2 {
+	color: grey;
+    font-size: 0.8rem;
+    position: relative;
+    top: 12px;
+    text-decoration: overline;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.container_section_products .content h3 {
+	font-size: 24px;
+    color: #333;
+    margin: 0;
+    padding-top: 0rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.container_section_products .content span {
+	color: #00a650;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+.container_section_products .content h4 {
+	color: #00a650;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 0.2rem;
+}
+
+.content_products  p {
+	color: grey;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+    transition: all 0.2s ease;
+}
+
+.content_products:hover .hover .content p {
+	opacity: 1;
+	overflow: initial;
+}
+
+.content_products:hover .hover .content h3 {
+	padding-top: 0.2rem;
+}
+
+.content_products:hover .hover .content h2 {
+	opacity: 1;
+	overflow: initial;
+}
+
+
+
+/*box-shadow: 0rem 1.5rem 1.3rem 0.5rem rgb(0 0 0 / 7%);
+    border-radius: 1.8rem;
+
+
+
+
+
+transition: all 0.4s ease;*/
+
+
+
+/* we will explain what these classes do next! */
+
+.menu-animation-leave-active,
+.menu-animation-enter-active {
+  transition: 0.2s;
+}
+.menu-animation-enter {
+  transform: translate(-100%, 0);
+}
+.menu-animation-leave-to {
+  transform: translate(-100%, 0);
+}
+
+
+/* ligin */
+
+
+
+.pege_general_login {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+}
+
+.header_login {
+	background-color: #fff159;
+	display: flex;
+    justify-content: space-around;
+	height: 20rem;
+	padding-top: 2rem;
+}
+
+.header_login > .navbar-brand {
+	background-image: url(../img/logo_mercado_libre.png);
+	background-repeat: no-repeat;
+	background-size: 134px 34px;
+	height: 34px;
+    top: 11px;
+    width: 134px;
+	display: block;
+}
+
+.header_login > .navbar-help {
+	width: 2%;
+	background-image: url(../img/help.png);
+	background-repeat: no-repeat;
+	background-size: 1.3rem 1.3rem;
+}
+
+.container_form {
+	background-color: #fff;
+    margin: -6.875rem auto 0;
+    max-width: 26.5rem;
+    padding: 2rem 4rem 0rem;
+	-webkit-box-shadow: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 .0625rem .125rem 0rgba(0,0,0,.15);
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px !important;
+	border-bottom-right-radius: 6px !important;
+}
+
+.form_tittle {
+	margin: 1.875rem 0 1.625rem;
+}
+
+.container_form h2 {
+	font-size: 1.5rem;
+	font-weight: 400;
+    letter-spacing: .0125rem;
+    overflow-wrap: break-word;
+}
+.container_form label {
+	color: rgba(0,0,0,.9);
+    cursor: text;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.1rem;
+    margin: 0 0 0.4rem 0.4rem;
+}
+
+.container_form input {
+	width: 100%;
+	display: flex;
+	align-items: center;
+    background-color: #fff;
+	background: transparent;
+	border: 0;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);
+    min-height: 48px;
+    color: rgba(0,0,0,.9);
+	font-size: 1.4rem;
+	margin-bottom: 2rem;
+}
+
+.container_form button {
+	width: 100%;
+	background-color: #3483fa;
+    border-color: transparent;
+    color: #fff;
+	box-shadow: 0 0 0 0 #fff;
+    cursor: pointer;
+	transition: box-shadow .25s ease-out,background-color .2s ease-out,-webkit-box-shadow .25s ease-out;
+	border-radius: 6px;
+	font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.container_form button:hover {
+	background-color: #2968c8;
+	border-color: transparent;
+	color: #fff;
+}
+.container_form .crear_cuenta {
+	margin: 0.5rem 0 0;
+	background-color: transparent;
+    border-color: transparent;
+    color: #3483fa;
+	text-decoration: none;
+	width: 100%;
+	box-shadow: 0 0 0 0 #fff;
+    cursor: pointer;
+	transition: box-shadow .25s ease-out,background-color .2s ease-out,-webkit-box-shadow .25s ease-out;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+	border-radius: 6px;
+	font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.container_form .crear_cuenta:hover {
+	background-color: rgba(65,137,230,.1);
+    border-color: transparent;
+    color: #3483fa;
+	transition: background-color .2s ease-in;
+}
+
+.container_form .need {
+	padding: 16px;
+	color: #3483fa;
+    text-decoration: none;
+	font-size: .875rem;
+    margin-left: -4rem;
+	text-align: center;
+    width: 26.5rem;
+	display: block;
+	font-weight: 600;
+    line-height: 20px;
+	transition: background-color .15s ease-out;
+	border-top: 1px solid rgba(0,0,0,.07);
+}
+
+.container_form .need:hover {
+	background-color: #f5f5f5;
+    color: #2968c8;
+}
